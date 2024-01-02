@@ -1,13 +1,13 @@
-name: Target Working Directory
+name: Target Directory
 on:
   push:
     branches: [main]
+    paths:
+      - 'target-directory'
 
 jobs:
   target:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./working-directory
 
     steps:
       - name: Checkout Repository
@@ -16,5 +16,4 @@ jobs:
           fetch-depth: 2
 
       - name: target hello
-        run: echo "hello i'm working-directory"
-        working-directory: ${{ env.working-directory }}
+        run: echo "pushed target directory"
