@@ -7,7 +7,7 @@ jobs:
   target:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./working-derectory
+      working-directory: working-derectory
 
     steps:
       - name: Checkout Repository
