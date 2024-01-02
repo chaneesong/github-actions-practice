@@ -1,0 +1,20 @@
+name: Target Working Directory
+on:
+  push:
+    branches:
+      - [main]
+
+jobs:
+  target:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./working-derectory
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: target hello
+        run: echo "hello i'm working-derectory"
