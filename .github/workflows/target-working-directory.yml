@@ -1,8 +1,7 @@
 name: Target Working Directory
 on:
   push:
-    branches:
-      - [main]
+    branches: [main]
 
 jobs:
   target:
