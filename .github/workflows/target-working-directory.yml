@@ -16,4 +16,5 @@ jobs:
           fetch-depth: 2
 
       - name: target hello
+        working-directory: ${{ env.working-directory }}
         run: echo "hello i'm working-derectory"
