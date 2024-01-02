@@ -7,7 +7,7 @@ jobs:
   target:
     runs-on: ubuntu-latest
     env:
-      working-directory: working-directory
+      working-directory: ./working-directory
 
     steps:
       - name: Checkout Repository
@@ -16,5 +16,5 @@ jobs:
           fetch-depth: 2
 
       - name: target hello
-        working-directory: ${{ env.working-directory }}
         run: echo "hello i'm working-directory"
+        working-directory: ${{ env.working-directory }}
