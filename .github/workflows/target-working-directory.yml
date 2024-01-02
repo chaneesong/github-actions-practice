@@ -1,3 +1,5 @@
+# paths를 이용하여 on 이벤트의 타겟이 되는 디렉토리를 설정할 수 있다.
+# paths-ignore를 활용하면 디렉토리를 무시할 수 있다.
 name: Target Directory
 on:
   push:
