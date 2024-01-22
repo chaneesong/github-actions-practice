@@ -9,13 +9,20 @@ on:
 
 jobs:
   secrets:
+    env:
+      working-directory: ./target-directory
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: ls
+      - name: root directory
+        run: |
+          pwd
+          ls
+
+      - name: target directory
         run: |
           pwd
           ls
