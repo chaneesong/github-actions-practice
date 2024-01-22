@@ -23,6 +23,7 @@ jobs:
           ls
 
       - name: target directory
+        working-directory: ${{ env.working-directory }}
         run: |
           pwd
           ls
